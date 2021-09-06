@@ -13,6 +13,9 @@
 		EFDDB35926E2745F0046E55F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDDB35726E2745F0046E55F /* Main.storyboard */; };
 		EFDDB35B26E274610046E55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDDB35A26E274610046E55F /* Assets.xcassets */; };
 		EFDDB35E26E274610046E55F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDDB35C26E274610046E55F /* LaunchScreen.storyboard */; };
+		EFDDB36726E275740046E55F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EFDDB36626E275740046E55F /* data.json */; };
+		EFDDB36926E292C60046E55F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB36826E292C60046E55F /* Models.swift */; };
+		EFDDB36E26E363180046E55F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB36D26E363180046E55F /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EFDDB35A26E274610046E55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFDDB35D26E274610046E55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFDDB35F26E274610046E55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFDDB36626E275740046E55F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = SOURCE_ROOT; };
+		EFDDB36826E292C60046E55F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EFDDB36D26E363180046E55F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		EFDDB35026E2745F0046E55F /* JsonParsing */ = {
 			isa = PBXGroup;
 			children = (
+				EFDDB36626E275740046E55F /* data.json */,
 				EFDDB35126E2745F0046E55F /* AppDelegate.swift */,
 				EFDDB35326E2745F0046E55F /* SceneDelegate.swift */,
-				EFDDB35526E2745F0046E55F /* ViewController.swift */,
-				EFDDB35726E2745F0046E55F /* Main.storyboard */,
+				EFDDB36B26E292F80046E55F /* Controller */,
+				EFDDB36C26E293330046E55F /* View */,
 				EFDDB35A26E274610046E55F /* Assets.xcassets */,
 				EFDDB35C26E274610046E55F /* LaunchScreen.storyboard */,
 				EFDDB35F26E274610046E55F /* Info.plist */,
+				EFDDB36A26E292DB0046E55F /* Model */,
 			);
 			path = JsonParsing;
+			sourceTree = "<group>";
+		};
+		EFDDB36A26E292DB0046E55F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFDDB36826E292C60046E55F /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFDDB36B26E292F80046E55F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFDDB35526E2745F0046E55F /* ViewController.swift */,
+				EFDDB36D26E363180046E55F /* ListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFDDB36C26E293330046E55F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFDDB35726E2745F0046E55F /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +160,7 @@
 				EFDDB35E26E274610046E55F /* LaunchScreen.storyboard in Resources */,
 				EFDDB35B26E274610046E55F /* Assets.xcassets in Resources */,
 				EFDDB35926E2745F0046E55F /* Main.storyboard in Resources */,
+				EFDDB36726E275740046E55F /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFDDB35626E2745F0046E55F /* ViewController.swift in Sources */,
+				EFDDB36926E292C60046E55F /* Models.swift in Sources */,
 				EFDDB35226E2745F0046E55F /* AppDelegate.swift in Sources */,
+				EFDDB36E26E363180046E55F /* ListViewController.swift in Sources */,
 				EFDDB35426E2745F0046E55F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
